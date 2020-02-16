@@ -5,6 +5,28 @@ _Get async animation frame context_
 ### Install
 `npm install --save async-raf`
 
+### Why?
+
+When you want to get a value from requestAnimationFrame, instead of:
+
+```javascript
+const area = await new Promise((resolve) => {
+    window.requestAnimationFrame(() => {
+        cosnt { offsetWidth, offsetHeight } = someElement;
+        resolve(offsetWidth * offsetHeight);
+    });
+});
+```
+
+You can use AsynRAF:
+
+```javascript
+const area = await asyncRaf(() => {
+    cosnt { offsetWidth, offsetHeight } = someElement;
+    return offsetWidth * offsetHeight;
+});
+```
+
 ### Usage
 ```javascript
 // All callbacks will be execute inside `requestAnimationFrame()`

@@ -1,0 +1,44 @@
+{
+  "name": "async-raf",
+  "version": "1.0.0",
+  "description": "Get async animation frame context",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "release": "release-it"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uditalias/async-raf.git"
+  },
+  "keywords": [
+    "async",
+    "requestAnimationFrame",
+    "responsive",
+    "reflow"
+  ],
+  "author": {
+    "name": "Udi Talias",
+    "email": "udi.talias@gmail.com",
+    "url": "https://github.com/uditalias"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uditalias/async-raf/issues"
+  },
+  "homepage": "https://github.com/uditalias/async-raf#readme",
+  "devDependencies": {
+    "@types/jest": "^25.1.2",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "release-it": "^12.4.3"
+  }
+}

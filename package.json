@@ -5,12 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "release": "release-it"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test"
-    }
+    "release": "release-it",
+    "prepublishOnly": "npm t"
   },
   "files": [
     "index.js"
@@ -37,7 +33,6 @@
   "homepage": "https://github.com/uditalias/async-raf#readme",
   "devDependencies": {
     "@types/jest": "^25.1.2",
-    "husky": "^4.2.3",
     "jest": "^25.1.0",
     "release-it": "^12.4.3"
   }

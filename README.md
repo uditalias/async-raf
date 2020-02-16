@@ -1,5 +1,6 @@
-# async-raf
-Get async animation frame context
+# async-raf [![npm version](https://badge.fury.io/js/async-raf.svg)](https://badge.fury.io/js/async-raf)
+_Get async animation frame context_
+
 
 ### Install
 `npm install --save async-raf`

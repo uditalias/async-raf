@@ -1,12 +1,13 @@
 {
   "name": "async-raf",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Get async animation frame context",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "jest",
     "release": "release-it",
-    "prepublishOnly": "npm t"
+    "prepublishOnly": "npm run build && npm t",
+    "build": "babel index.js --out-dir lib && uglifyjs --compress --mangle --output lib/index.js -- lib/index.js"
   },
   "files": [
     "index.js"
@@ -32,8 +33,16 @@
   },
   "homepage": "https://github.com/uditalias/async-raf#readme",
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
     "@types/jest": "^25.1.2",
     "jest": "^25.1.0",
-    "release-it": "^12.4.3"
+    "release-it": "^12.4.3",
+    "uglify-js": "^3.9.3"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.9.6"
   }
 }

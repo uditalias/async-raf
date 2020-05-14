@@ -1,4 +1,4 @@
-const asyncRaf = require("./");
+const asyncRaf = require("./lib");
 
 describe("asyncRaf", () => {
 

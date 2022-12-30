@@ -39,7 +39,7 @@
     "@babel/preset-env": "^7.9.6",
     "@types/jest": "^25.1.2",
     "jest": "^25.1.0",
-    "release-it": "^12.4.3",
+    "release-it": "^15.6.0",
     "uglify-js": "^3.9.3"
   },
   "dependencies": {
